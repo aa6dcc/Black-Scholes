@@ -1,5 +1,5 @@
 import pytest
-from project import BS_option, BS_imply_volatility, ncdf_delta
+from BlackScholes import BS_option, BS_imply_volatility, ncdf_delta
 from math import exp, sqrt, pi
 
 def test_call_put():
