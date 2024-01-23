@@ -14590,9 +14590,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>A <a href="https://en.wikipedia.org/wiki/Derivative_(finance%29">derivative</a> is a contract that <em>derives</em> its value from the performance of an underlying entity. Typical examples of derivatives include <a href="https://en.wikipedia.org/wiki/Futures_contract">future</a>, <a href="https://en.wikipedia.org/wiki/Forward_contract">forward</a>, option, <a href="https://en.wikipedia.org/wiki/Swap_(finance">swap</a>).</p>
+<p>A <a href="https://en.wikipedia.org/wiki/Derivative_(finance%29">derivative</a> is a contract that <em>derives</em> its value from the performance of an underlying asset. Typical examples of derivatives include <a href="https://en.wikipedia.org/wiki/Futures_contract">future</a>, <a href="https://en.wikipedia.org/wiki/Forward_contract">forward</a>, option, <a href="https://en.wikipedia.org/wiki/Swap_(finance">swap</a>).</p>
 <p>An <a href="https://en.wikipedia.org/wiki/Option_(finance%29">option</a> is a <strong>derivative</strong> i.e. a contract that offers the buyer of the derivative the <strong>right</strong> but not the obligation to buy or sell the underlying asset at a certain date in the future (expiry date), at a specified price (the strike price).</p>
-<p>The <a href="https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model">Black-Scholes formula</a> enables the pricing of European styled options under various assumptions. The main idea behind the BS model leading to the close form formula is that an option can be dynamically replicated by a portfolio consisting of the underlying and a zero coupon bond.
+<p>The <a href="https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model">Black-Scholes formula</a> enables the pricing of European styled options under various assumptions. The main idea behind the BS model leading to the close form formula is that an option can be <strong>dynamically replicated</strong> by a portfolio consisting of the underlying and a zero coupon bond.
 In particular the risk of the option, which comes from uncertainty of the underlying, can be dynamically offset by trading the right amount of the underlying.</p>
 
 </div>
@@ -14603,7 +14603,7 @@ In particular the risk of the option, which comes from uncertainty of the underl
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14633,7 +14633,7 @@ In particular the risk of the option, which comes from uncertainty of the underl
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -14667,8 +14667,8 @@ In particular the risk of the option, which comes from uncertainty of the underl
 <h3 id="Graph-of-call-price-as-a-function-of-the-underlying-stock-price">Graph of <a href="https://en.wikipedia.org/wiki/Call_option">call</a> price as a function of the underlying stock price<a class="anchor-link" href="#Graph-of-call-price-as-a-function-of-the-underlying-stock-price">&#182;</a></h3><p>A call option is a contract that offers the buyer the right but not the obligation to <strong>buy</strong> the underlying asset at the expiry date, at a predefined strike price.</p>
 <p>The price C of an option can be broken down into 2 non negative values:</p>
 <ul>
-<li>Intrinsic Value: IV = Max(S-K, 0) for a call, also known as payout of the option</li>
-<li>Time Value: TV = C - IV</li>
+<li><strong>Intrinsic Value</strong>: IV = Max(S-K, 0) for a call, also known as payout of the option</li>
+<li><strong>Time Value</strong>: TV = C - IV</li>
 </ul>
 
 </div>
@@ -14679,7 +14679,7 @@ In particular the risk of the option, which comes from uncertainty of the underl
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sigma</span> <span class="ow">in</span> <span class="n">sigmas</span><span class="p">:</span>
@@ -14741,7 +14741,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sigma</span> <span class="ow">in</span> <span class="n">sigmas</span><span class="p">:</span>
@@ -14793,8 +14793,8 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Option-Greeks">Option Greeks<a class="anchor-link" href="#Option-Greeks">&#182;</a></h2><p><a href="https://en.wikipedia.org/wiki/Greeks_(finance">Greeks</a>) represent the sensitivity of the price of a derivative instrument such as an option to changes in one or more underlying parameters on which the value of an instrument is dependent</p>
-<p><img src="./images/greeks.png" alt="Local Image"></p>
+<h2 id="Option-Greeks">Option Greeks<a class="anchor-link" href="#Option-Greeks">&#182;</a></h2><p><a href="https://en.wikipedia.org/wiki/Greeks_(finance%29">Greeks</a> represent the sensitivity of the price of a derivative instrument such as an option to changes in one or more underlying parameters on which the value of an instrument is dependent</p>
+<p><img src="/images/greeks.png" alt="Local Image"></p>
 
 </div>
 </div>
@@ -14815,7 +14815,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sigma</span> <span class="ow">in</span> <span class="n">sigmas</span><span class="p">:</span>
@@ -14888,7 +14888,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sigma</span> <span class="ow">in</span> <span class="n">sigmas</span><span class="p">:</span>
