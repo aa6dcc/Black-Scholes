@@ -12,6 +12,10 @@ The model is widely used in finance to:
 
 The formulas for the price of European call and put options are as follows:
 
+### Black-Scholes Formula
+
+The formulas for the price of European call and put options are as follows:
+
 #### Call Option Price:
 \[
 C = S N(d_1) - K e^{-rT} N(d_2)
@@ -39,6 +43,7 @@ d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}
 \[
 d_2 = d_1 - \sigma\sqrt{T}
 \]
+
 
 ### Option Greeks
 
