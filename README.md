@@ -8,26 +8,43 @@ The model is widely used in finance to:
 - Assess the sensitivity of option prices to various factors (option greeks).
 - Understand market behaviour and risk management.
 
+### Black-Scholes Formula
+
+The formulas for the price of European call and put options are as follows:
+
+#### Call Option Price:
+
+<p align="center">
+    <img src="https://latex.codecogs.com/png.latex?C%20%3D%20S%20N%28d_1%29%20-%20K%20e%5E%7B-rT%7D%20N%28d_2%29" alt="Call Option Formula"/>
+</p>
+
+#### Put Option Price:
+
+<p align="center">
+    <img src="https://latex.codecogs.com/png.latex?P%20%3D%20K%20e%5E%7B-rT%7D%20N%28-d_2%29%20-%20S%20N%28-d_1%29" alt="Put Option Formula"/>
+</p>
+
+Where:
+
+- \( S \): Current stock price
+- \( K \): Strike price
+- \( T \): Time to maturity (in years)
+- \( r \): Risk-free interest rate (annualised)
+- \( \sigma \): Volatility of the stock (annualised)
+- \( N(x) \): Cumulative distribution function of the standard normal distribution
+
+Intermediate terms:
+
+<p align="center">
+    <img src="https://latex.codecogs.com/png.latex?d_1%20%3D%20%5Cfrac%7B%5Cln%28S%2FK%29%20%2B%20%28r%20%2B%20%5Csigma%5E2%2F2%29T%7D%7B%5Csigma%5Csqrt%7BT%7D%7D" alt="d1 Formula"/>
+</p>
+<p align="center">
+    <img src="https://latex.codecogs.com/png.latex?d_2%20%3D%20d_1%20-%20%5Csigma%5Csqrt%7BT%7D" alt="d2 Formula"/>
+</p>
+
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <h1>Black-Scholes Model</h1>
-    <p>The Black-Scholes formula for European call and put options are:</p>
-    <h2>Call Option Price</h2>
-    <p>
-        \( C = S N(d_1) - K e^{-rT} N(d_2) \)
-    </p>
-    <h2>Put Option Price</h2>
-    <p>
-        \( P = K e^{-rT} N(-d_2) - S N(-d_1) \)
-    </p>
-    <h2>Intermediate Terms</h2>
-    <p>
-        \( d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}} \)
-    </p>
-    <p>
-        \( d_2 = d_1 - \sigma\sqrt{T} \)
-    </p>
     <h2>Option Greeks</h2>
     <ul>
         <li><strong>Delta (Δ):</strong> Sensitivity of the option price to changes in the underlying asset price.</li>
