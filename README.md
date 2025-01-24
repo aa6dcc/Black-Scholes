@@ -30,7 +30,7 @@ Where:
 - \( K \): Strike price
 - \( T \): Time to maturity (in years)
 - \( r \): Risk-free interest rate (annualised)
-- \(σ): Volatility of the stock (annualised)
+- \( σ ): Volatility of the stock (annualised)
 - \( N(x) \): Cumulative distribution function of the standard normal distribution
 
 Intermediate terms:
@@ -55,3 +55,24 @@ Intermediate terms:
     </ul>
 </body>
 </html>
+
+### Call-Put Parity
+
+In addition to the Black-Scholes model, call-put parity provides an essential relationship between the prices of European call and put options with the same strike price and expiration date. The call-put parity formula is expressed as:
+
+<p align="center">
+    <img src="https://latex.codecogs.com/png.latex?C%20-%20P%20%3D%20S%20-%20K%20e%5E%7B-rT%7D" alt="Call-Put Parity Formula"/>
+</p>
+
+Where:
+
+- \( C \): Call option price
+- \( P \): Put option price
+- \( S \): Current stock price
+- \( K \): Strike price
+- \( r \): Risk-free interest rate (annualised)
+- \( T \): Time to maturity (in years)
+
+This relationship is fundamental in options pricing, ensuring no arbitrage opportunities exist and providing a basis for understanding option valuation in different market conditions.
+
+This project particularly examines the impact of volatility on pricing. 
