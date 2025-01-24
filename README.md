@@ -1,6 +1,6 @@
 ## What is the Black-Scholes Model?
 
-The Black-Scholes model, developed by Fischer Black and Myron Scholes, is a mathematical model used to estimate the theoretical price of European options. It assumes that the price of the underlying asset follows a geometric Brownian motion with constant volatility and no arbitrage opportunities.
+The Black-Scholes model, developed by Fischer Black and Myron Scholes, is a mathematical model used to estimate the theoretical price of European options. It assumes that the price of the underlying asset follows a geometric Brownian motion (log-normal distribution) with constant volatility and no arbitrage opportunities (efficient markets). It also supposes it is dealing with constant risk-free rates.
 
 The model is widely used in finance to:
 
