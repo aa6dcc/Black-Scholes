@@ -30,7 +30,7 @@ Where:
 - \( K \): Strike price
 - \( T \): Time to maturity (in years)
 - \( r \): Risk-free interest rate (annualised)
-- \( \sigma \): Volatility of the stock (annualised)
+- \(σ): Volatility of the stock (annualised)
 - \( N(x) \): Cumulative distribution function of the standard normal distribution
 
 Intermediate terms:
