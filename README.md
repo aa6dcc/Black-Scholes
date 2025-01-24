@@ -8,49 +8,41 @@ The model is widely used in finance to:
 - Assess the sensitivity of option prices to various factors (option greeks).
 - Understand market behaviour and risk management.
 
-### Black-Scholes Formula
-
-The formulas for the price of European call and put options are as follows:
-
-### Black-Scholes Formula
-
-The formulas for the price of European call and put options are as follows:
-
-#### Call Option Price:
-\[
-C = S N(d_1) - K e^{-rT} N(d_2)
-\]
-
-#### Put Option Price:
-\[
-P = K e^{-rT} N(-d_2) - S N(-d_1)
-\]
-
-Where:
-
-- \( S \): Current stock price
-- \( K \): Strike price
-- \( T \): Time to maturity (in years)
-- \( r \): Risk-free interest rate (annualised)
-- \( \sigma \): Volatility of the stock (annualised)
-- \( N(x) \): Cumulative distribution function of the standard normal distribution
-
-Intermediate terms:
-
-\[
-d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}
-\]
-\[
-d_2 = d_1 - \sigma\sqrt{T}
-\]
-
-
-### Option Greeks
-
-The Black-Scholes model also provides the foundation for calculating option greeks, which measure the sensitivity of option prices to various factors:
-
-- **Delta (Δ):** Sensitivity of the option price to changes in the underlying asset price.
-- **Gamma (Γ):** Rate of change of delta with respect to the underlying asset price.
-- **Vega (ν):** Sensitivity of the option price to changes in volatility.
-- **Theta (Θ):** Sensitivity of the option price to the passage of time.
-- **Rho (ρ):** Sensitivity of the option price to changes in the risk-free interest rate.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black-Scholes Model</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1>Black-Scholes Model</h1>
+    <p>The Black-Scholes formula for European call and put options are:</p>
+    <h2>Call Option Price</h2>
+    <p>
+        \( C = S N(d_1) - K e^{-rT} N(d_2) \)
+    </p>
+    <h2>Put Option Price</h2>
+    <p>
+        \( P = K e^{-rT} N(-d_2) - S N(-d_1) \)
+    </p>
+    <h2>Intermediate Terms</h2>
+    <p>
+        \( d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}} \)
+    </p>
+    <p>
+        \( d_2 = d_1 - \sigma\sqrt{T} \)
+    </p>
+    <h2>Option Greeks</h2>
+    <ul>
+        <li><strong>Delta (Δ):</strong> Sensitivity of the option price to changes in the underlying asset price.</li>
+        <li><strong>Gamma (Γ):</strong> Rate of change of delta with respect to the underlying asset price.</li>
+        <li><strong>Vega (ν):</strong> Sensitivity of the option price to changes in volatility.</li>
+        <li><strong>Theta (Θ):</strong> Sensitivity of the option price to the passage of time.</li>
+        <li><strong>Rho (ρ):</strong> Sensitivity of the option price to changes in the risk-free interest rate.</li>
+    </ul>
+</body>
+</html>
